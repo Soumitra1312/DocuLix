@@ -1,0 +1,61 @@
+.loading-bar {
+    position: relative;
+    width: 100%;
+    height: 4px;
+    background-color: #f1f1f1;
+    border-radius: 2px;
+    overflow: hidden;
+  }
+  
+  .progress {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: #007bff; /* Change this to customize the loading bar color */
+    transition: width 0.3s ease;
+  }
+
+  /* Question section styling */
+  .questionSection {
+    margin: 20px 0;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+  }
+
+  .questionSection h3 {
+    margin-bottom: 15px;
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  .customQuestionContainer {
+    animation: slideDown 0.3s ease-out;
+  }
+
+  .customQuestionInput {
+    background: rgba(255, 255, 255, 0.9) !important;
+    border: 2px solid #4CAF50 !important;
+    border-radius: 8px !important;
+    transition: all 0.3s ease;
+  }
+
+  .customQuestionInput:focus {
+    outline: none;
+    border-color: #45a049 !important;
+    box-shadow: 0 0 10px rgba(76, 175, 80, 0.3);
+  }
+
+  @keyframes slideDown {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LexiGen</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- Font Awesome CDN -->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  integrity="sha512-1ycn6IcaQQ40/J+z1V+eR3bV0drVuYl/1M0G3dIBkRxcbvcUSPr0ew+xOeE50I4xyOykDdfTFFy9NdPTM8H0Pw=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+/>
+ <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+     crossorigin=""/>
+
+    
+    <!-- ✅ Tailwind CDN with dark mode config -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+        };
+    </script>
+     <script src="https://cdn.jsdelivr.net/npm/just-validate@4.2.0/dist/just-validate.production.min.js"></script>
+     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+     crossorigin=""></script>
+     <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet.fullscreen/Control.FullScreen.css"
+  />
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+</head>
+<body class="pt-32 bg-white text-gray-900 dark:bg-black dark:text-white transition-colors duration-300">
+    <div class="container mx-auto px-4 py-8">
+        <%- body %>
+    </div>
+    <!-- ✅ Dark Mode Script -->
+    <script>
+        // Load dark mode preference
+        document.addEventListener('DOMContentLoaded', () => {
+            if (localStorage.getItem('darkMode') === 'true') {
+                document.documentElement.classList.add('dark');
+            }
+        });
+
+        // Toggle dark mode and save to localStorage
+        function toggleDarkMode() {
+            document.documentElement.classList.toggle('dark');
+            localStorage.setItem('darkMode', document.documentElement.classList.contains('dark'));
+        }
+    </script>
+</body>
+</html>

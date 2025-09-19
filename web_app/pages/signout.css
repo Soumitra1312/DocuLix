@@ -1,0 +1,380 @@
+/* Sign Out Page Styles */
+.signout-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0B1426 0%, #1a2b4d 50%, #2c1810 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  font-family: 'Centra', sans-serif;
+}
+
+/* Background Animation */
+.background-animation {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.floating-particles {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.particle {
+  position: absolute;
+  background: linear-gradient(45deg, #FFD700, #FFA500);
+  border-radius: 50%;
+  opacity: 0.6;
+  animation: float 6s ease-in-out infinite;
+}
+
+.particle-1 { width: 4px; height: 4px; top: 20%; left: 10%; animation-delay: 0s; }
+.particle-2 { width: 6px; height: 6px; top: 60%; left: 20%; animation-delay: 1s; }
+.particle-3 { width: 3px; height: 3px; top: 40%; left: 80%; animation-delay: 2s; }
+.particle-4 { width: 5px; height: 5px; top: 80%; left: 70%; animation-delay: 3s; }
+.particle-5 { width: 4px; height: 4px; top: 30%; left: 60%; animation-delay: 4s; }
+.particle-6 { width: 7px; height: 7px; top: 70%; left: 40%; animation-delay: 5s; }
+.particle-7 { width: 3px; height: 3px; top: 15%; left: 90%; animation-delay: 1.5s; }
+.particle-8 { width: 5px; height: 5px; top: 85%; left: 15%; animation-delay: 2.5s; }
+.particle-9 { width: 4px; height: 4px; top: 55%; left: 5%; animation-delay: 3.5s; }
+.particle-10 { width: 6px; height: 6px; top: 25%; left: 75%; animation-delay: 4.5s; }
+.particle-11 { width: 3px; height: 3px; top: 45%; left: 30%; animation-delay: 0.5s; }
+.particle-12 { width: 5px; height: 5px; top: 65%; left: 85%; animation-delay: 1.2s; }
+.particle-13 { width: 4px; height: 4px; top: 35%; left: 25%; animation-delay: 2.2s; }
+.particle-14 { width: 6px; height: 6px; top: 75%; left: 55%; animation-delay: 3.2s; }
+.particle-15 { width: 3px; height: 3px; top: 10%; left: 45%; animation-delay: 4.2s; }
+.particle-16 { width: 5px; height: 5px; top: 90%; left: 65%; animation-delay: 5.2s; }
+.particle-17 { width: 4px; height: 4px; top: 50%; left: 95%; animation-delay: 0.8s; }
+.particle-18 { width: 7px; height: 7px; top: 20%; left: 35%; animation-delay: 1.8s; }
+.particle-19 { width: 3px; height: 3px; top: 80%; left: 25%; animation-delay: 2.8s; }
+.particle-20 { width: 5px; height: 5px; top: 40%; left: 15%; animation-delay: 3.8s; }
+
+@keyframes float {
+  0%, 100% { 
+    transform: translateY(0px) rotate(0deg); 
+    opacity: 0.6; 
+  }
+  50% { 
+    transform: translateY(-20px) rotate(180deg); 
+    opacity: 1; 
+  }
+}
+
+/* Main Content */
+.signout-content {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 215, 0, 0.2);
+  border-radius: 20px;
+  padding: 60px 40px;
+  text-align: center;
+  max-width: 600px;
+  width: 90%;
+  position: relative;
+  z-index: 2;
+  box-shadow: 
+    0 20px 40px rgba(0, 0, 0, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  animation: slideInUp 1s ease-out;
+}
+
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Logo Section */
+.logo-section {
+  margin-bottom: 40px;
+  animation: fadeIn 1.5s ease-out;
+}
+
+.signout-logo {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  box-shadow: 0 10px 20px rgba(255, 215, 0, 0.3);
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { 
+    transform: scale(1); 
+    box-shadow: 0 10px 20px rgba(255, 215, 0, 0.3); 
+  }
+  50% { 
+    transform: scale(1.05); 
+    box-shadow: 0 15px 30px rgba(255, 215, 0, 0.5); 
+  }
+}
+
+.brand-name {
+  font-size: 2.5rem;
+  font-weight: bold;
+  background: linear-gradient(45deg, #FFD700, #FFA500);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 10px;
+  animation: shimmer 3s ease-in-out infinite;
+}
+
+@keyframes shimmer {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.8; }
+}
+
+.brand-tagline {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1rem;
+  font-style: italic;
+}
+
+/* Message Section */
+.message-section {
+  margin-bottom: 40px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 1s ease-out;
+}
+
+.message-section.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.signout-icon {
+  margin-bottom: 20px;
+  animation: rotateIn 1s ease-out 0.5s both;
+}
+
+@keyframes rotateIn {
+  from {
+    opacity: 0;
+    transform: rotate(-180deg) scale(0.5);
+  }
+  to {
+    opacity: 1;
+    transform: rotate(0deg) scale(1);
+  }
+}
+
+.signout-title {
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 20px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.signout-description {
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+.signout-subtitle {
+  font-size: 1rem;
+  color: rgba(255, 215, 0, 0.8);
+  font-style: italic;
+}
+
+/* Action Section */
+.action-section {
+  margin-bottom: 40px;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 1s ease-out;
+  display: flex;
+  justify-content: center;
+}
+
+.action-section.slide-up {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.visit-again-btn {
+  background: linear-gradient(45deg, #FFD700, #FFA500);
+  color: #000;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 50px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(255, 215, 0, 0.4);
+}
+
+.visit-again-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(255, 215, 0, 0.6);
+  background: linear-gradient(45deg, #FFA500, #FFD700);
+}
+
+.visit-again-btn:active {
+  transform: translateY(-1px);
+}
+
+/* Footer Message */
+.footer-message {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 1s ease-out;
+}
+
+.footer-message.fade-in-delayed {
+  opacity: 1;
+  transform: translateY(0);
+  animation-delay: 1s;
+}
+
+.footer-message p {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 1rem;
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+.emoji {
+  font-size: 1.2rem;
+  margin: 0 8px;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+  40% { transform: translateY(-5px); }
+  60% { transform: translateY(-3px); }
+}
+
+.contact-info p {
+  color: rgba(255, 215, 0, 0.6);
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+/* Decorative Elements */
+.decorative-elements {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.golden-circle {
+  position: absolute;
+  border: 2px solid rgba(255, 215, 0, 0.2);
+  border-radius: 50%;
+  animation: rotate 20s linear infinite;
+}
+
+.circle-1 {
+  width: 200px;
+  height: 200px;
+  top: 10%;
+  left: 80%;
+  animation-direction: normal;
+}
+
+.circle-2 {
+  width: 150px;
+  height: 150px;
+  bottom: 20%;
+  left: 10%;
+  animation-direction: reverse;
+  animation-duration: 15s;
+}
+
+.circle-3 {
+  width: 100px;
+  height: 100px;
+  top: 70%;
+  right: 20%;
+  animation-duration: 25s;
+}
+
+@keyframes rotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .signout-content {
+    padding: 40px 20px;
+    margin: 20px;
+  }
+  
+  .brand-name {
+    font-size: 2rem;
+  }
+  
+  .signout-title {
+    font-size: 1.8rem;
+  }
+  
+  .signout-description {
+    font-size: 1rem;
+  }
+  
+  .visit-again-btn {
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .golden-circle {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .signout-content {
+    padding: 30px 15px;
+  }
+  
+  .signout-logo {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .brand-name {
+    font-size: 1.5rem;
+  }
+  
+  .signout-title {
+    font-size: 1.5rem;
+  }
+  
+  .visit-again-btn {
+    padding: 12px 20px;
+    font-size: 0.9rem;
+  }
+}
+
+/* Loading Animation */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}

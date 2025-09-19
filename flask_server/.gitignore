@@ -1,0 +1,5 @@
+# Ignore all environment and sensitive files in flask_server
+.env
+.env.*
+.env.example
+*.env

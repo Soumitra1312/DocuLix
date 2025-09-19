@@ -1,0 +1,493 @@
+/* ==========================================================================
+   DASHBOARD PAGE SPECIFIC STYLES
+   DocuLix Dashboard - AI Legal Document Analysis
+   ========================================================================== */
+
+/* Dashboard Custom Navbar - Force Complete Transparency */
+#dashboard-custom-navbar,
+#dashboard-custom-navbar *,
+#dashboard-custom-navbar div,
+#dashboard-custom-navbar a,
+div#dashboard-custom-navbar,
+body div#dashboard-custom-navbar,
+html body div#dashboard-custom-navbar {
+  background: none !important;
+  background-color: rgba(0, 0, 0, 0) !important;
+  background-image: none !important;
+  background-attachment: scroll !important;
+  background-blend-mode: normal !important;
+  background-clip: border-box !important;
+  background-origin: padding-box !important;
+  background-position: 0% 0% !important;
+  background-repeat: repeat !important;
+  background-size: auto !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  -moz-backdrop-filter: none !important;
+  -ms-backdrop-filter: none !important;
+  -o-backdrop-filter: none !important;
+  border: 0 !important;
+  border-top: 0 !important;
+  border-bottom: 0 !important;
+  border-left: 0 !important;
+  border-right: 0 !important;
+  box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  filter: none !important;
+  -webkit-filter: none !important;
+  -moz-filter: none !important;
+  -ms-filter: none !important;
+  -o-filter: none !important;
+}
+
+/* Block any pseudo elements that might add backgrounds */
+#dashboard-custom-navbar::before,
+#dashboard-custom-navbar::after,
+#dashboard-custom-navbar *::before,
+#dashboard-custom-navbar *::after {
+  content: none !important;
+  display: none !important;
+  background: transparent !important;
+  background-color: transparent !important;
+}
+
+/* Dashboard Background and Layout */
+.dashboard {
+    background-image: url('/assets/img/dashboard-bg.png');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+.dashboard::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: -1;
+    pointer-events: none;
+}
+
+.dashboard{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+}
+
+/* Dashboard Title and Typography */
+.doculix-dashboard-hover {
+    color: #B8860B;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.doculix-dashboard-hover:hover {
+    color: #DAA520;
+    text-shadow: 2px 2px 8px rgba(184, 134, 11, 0.7), 0 0 20px rgba(218, 165, 32, 0.5);
+}
+
+.complete-phrase {
+    width: 100%;
+    animation: reveal 7s infinite;
+}
+
+.complete-phrase span {
+    animation: slidein 7s infinite;
+}
+
+/* Dashboard File Upload Styles */
+.drop-container {
+    position: relative;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px dashed #FFD700;
+    color: #FFD700;
+    cursor: pointer;
+    transition: background .2s ease-in-out, border .2s ease-in-out;
+    margin-bottom: 20px;
+}
+
+.drop-container:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: #FFF;
+}
+
+.drop-container:hover .drop-title {
+    color: #FFF;
+}
+
+.drop-title {
+    color: #FFD700;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    transition: color .2s ease-in-out;
+}
+
+.file-upload::file-selector-button {
+    margin-right: 20px;
+    border: none;
+    background: #084cdf;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+    transition: background .2s ease-in-out;
+}
+
+.file-upload::file-selector-button:hover {
+    background: #0d45a5;
+}
+
+.file-upload {
+    color: #FFD700;
+    padding: 10px;
+    border: 1px solid #FFD700;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+}
+
+/* Dashboard Button Styles */
+.custom-btn {
+    width: 220px;
+    height: 40px;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    box-shadow: inset 2px 2px 2px 0px rgba(255,255,255,.5),
+     7px 7px 20px 0px rgba(0,0,0,.1),
+     4px 4px 5px 0px rgba(0,0,0,.1);
+    outline: none;
+}
+
+.btn-8 {
+    background-color: #f0ecfc;
+    background-image: linear-gradient(315deg, #6948cc 0%, #c797eb 74%);
+    line-height: 42px;
+    padding: 0;
+    border: none;
+}
+
+.btn-8 span {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.btn-8:before,
+.btn-8:after {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 0;
+    background: #c797eb;
+    transition: all 0.3s ease;
+}
+
+.btn-8:before{
+    height: 0%;
+    width: 2px;
+}
+
+.btn-8:after {
+    width: 0%;
+    height: 2px;
+}
+
+.btn-8:hover:before {
+    height: 100%;
+}
+
+.btn-8:hover:after {
+    width: 100%;
+}
+
+.btn-8:hover{
+    background: transparent;
+}
+
+.btn-8 span:hover{
+    color: #c797eb;
+}
+
+.btn-8 span:before,
+.btn-8 span:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    background: #c797eb;
+    transition: all 0.3s ease;
+}
+
+.btn-8 span:before {
+    width: 2px;
+    height: 0%;
+}
+
+.btn-8 span:after {
+    width: 0%;
+    height: 2px;
+}
+
+.btn-8 span:hover:before {
+    height: 100%;
+}
+
+.btn-8 span:hover:after {
+    width: 100%;
+}
+
+/* Dashboard Select Box */
+.select-box {
+    background-color: #ffffff;
+    color: rebeccapurple;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.select-box:hover {
+    color: rebeccapurple;
+}
+
+.select-box:focus {
+    box-shadow: 0 0 5px rebeccapurple;
+}
+
+.select-box option:checked {
+    box-shadow: 0 0 5px rebeccapurple;
+}
+
+/* Dashboard Code Container and Response Area */
+.code-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+    position: relative;
+}
+
+section.augs {
+    position: relative;
+    margin: 20px 0;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    border: 1px solid #FFD700;
+}
+
+section.augs::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: linear-gradient(45deg, #FFD700, #FFF, #FFD700);
+    border-radius: 12px;
+    z-index: -1;
+}
+
+.code-textarea {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    color: #FFD700;
+    border: none;
+    outline: none;
+    resize: vertical;
+    font-family: 'Courier New', monospace;
+    font-size: 16px;
+    line-height: 1.4;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.code-textarea:focus {
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+}
+
+.code-textarea::placeholder {
+    color: #999;
+}
+
+.title {
+    background: transparent;
+    border: none;
+    color: #FFD700;
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+.code {
+    background: rgba(0, 0, 0, 0.9);
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.highcontrast-dark {
+    background: rgba(0, 0, 0, 0.95);
+    color: #FFD700;
+    border-radius: 5px;
+}
+
+.ccode {
+    margin-top: 20px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.9);
+    border-radius: 10px;
+    border: 1px solid #FFD700;
+    color: #FFD700;
+    font-family: 'Courier New', monospace;
+}
+
+/* Dashboard Animations */
+@keyframes reveal {
+    0%, 80%, 100% { 
+        opacity: 1; 
+    }
+    40%, 60% { 
+        opacity: 0.5; 
+    }
+}
+
+@keyframes slidein {
+    0% { 
+        margin-left: -800px; 
+    }
+    20%, 35% { 
+        margin-left: -800px; 
+    }
+    40%, 55% { 
+        margin-left: -400px; 
+    }
+    60%, 75% { 
+        margin-left: -200px; 
+    }
+    80%, 95% { 
+        margin-left: 0px; 
+    }
+    100% { 
+        margin-left: 0px; 
+    }
+}
+
+/* Dashboard Responsive Design */
+@media (max-width: 768px) {
+    .dashboard {
+        padding: 10px;
+    }
+    
+    .drop-container {
+        height: 150px;
+        padding: 15px;
+    }
+    
+    .drop-title {
+        font-size: 1rem;
+    }
+    
+    .custom-btn {
+        width: 180px;
+        height: 35px;
+        font-size: 12px;
+    }
+    
+    .code-container {
+        margin: 10px;
+    }
+    
+    .code-textarea {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .dashboard {
+        padding: 5px;
+    }
+    
+    .drop-container {
+        height: 120px;
+        padding: 10px;
+    }
+    
+    .custom-btn {
+        width: 170px;
+        height: 30px;
+        font-size: 11px;
+    }
+}
+
+/* Typewriter Animation with Loop */
+@keyframes typewriter-loop {
+    0% { 
+        width: 0;
+    }
+    30% { 
+        width: 100%;
+    }
+    70% { 
+        width: 100%;
+    }
+    100% { 
+        width: 0;
+    }
+}
+
+@keyframes blink-caret {
+    from, to { 
+        border-color: transparent 
+    }
+    50% { 
+        border-color: #AA9C72 
+    }
+}
+
+.typewriter-container {
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0 auto;
+    display: inline-block;
+}
+
+.typewriter {
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: 0.05em;
+    animation: typewriter-loop 8s steps(40, end) infinite, blink-caret 0.75s step-end infinite;
+    display: inline-block;
+    max-width: fit-content;
+    border-right: 2px solid #AA9C72;
+    padding-right: 5px;
+}

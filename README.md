@@ -18,7 +18,7 @@ DocuLix is an AI-powered platform for uploading, analyzing, and simplifying lega
 
 
 <div align="center">
-  <img src="Flowchart.jpg" alt="Architecture Diagram" width="70%" />
+  <img src="FlowChart.jpg" alt="Flowchart Diagram" width="70%" />
 </div>
 
 ---

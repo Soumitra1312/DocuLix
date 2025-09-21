@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Verify OTP | LexiGen</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/styles.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+
+  <div class="container mt-5 p-5">
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+
+        <div class="card shadow-lg rounded-3" style="background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px);"">
+          <div class="card-body p-4">
+            <h3 class="text-center mb-4">Verify Your Account</h3>
+            <p class="text-center text-muted mb-4">We've sent OTP codes to both your email and phone number</p>
+
+            <form action="/verify-otp" method="POST">
+              <!-- Email OTP Input -->
+              <div class="mb-3 form-group">
+                <label for="emailOtp" class="form-label">Email OTP</label>
+                <span class="form-icon"><i class="fa fa-envelope"></i></span>
+                <input 
+                  type="text" 
+                  name="emailOtp" 
+                  id="emailOtp" 
+                  class="form-control" 
+                  placeholder="Enter OTP sent to your email" 
+                  maxlength="6"
+                  required>
+              </div>
+
+              <!-- Phone OTP Input -->
+              <div class="mb-3 form-group">
+                <label for="phoneOtp" class="form-label">Phone OTP</label>
+                <span class="form-icon"><i class="fa fa-phone"></i></span>
+                <input 
+                  type="text" 
+                  name="phoneOtp" 
+                  id="phoneOtp" 
+                  class="form-control" 
+                  placeholder="Enter OTP sent to your phone" 
+                  maxlength="6"
+                  required>
+              </div>
+
+              <!-- Submit -->
+              <button type="submit" class="btn btn-primary w-100">Verify Account</button>
+            </form>
+
+            <p class="text-center mt-3">
+              Didn't receive OTP? <a href="/signup">Resend OTP</a>
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

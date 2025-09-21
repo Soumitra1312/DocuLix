@@ -1,0 +1,10 @@
+Flask
+flask-cors
+python-dotenv
+PyPDF2
+requests
+numpy
+pillow
+python-docx
+pytesseract
+easyocr

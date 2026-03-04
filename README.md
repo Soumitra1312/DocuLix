@@ -121,9 +121,6 @@ Legal-AI_Project/
 
 ---
 
-## Authors
-- Team DocuLix
-
 # Legal AI :Automated Legal Document Analysis Platform
 
 <div align="center" style="margin-bottom: 20px;">

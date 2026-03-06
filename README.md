@@ -178,7 +178,7 @@ The Automated Legal Document Analysis Platform is built on the following technol
 
 
 ## Support
-For any questions, issues, or feedback, please contact our  team 
+For any questions, issues, or feedback, please contact: [soumitra.ghosh468@email.com](mailto:soumitra.ghosh468@email.com) 
 
 ## Acknowledgments
 We would like to acknowledge the following open-source projects and datasets that have contributed to the development of our platform:

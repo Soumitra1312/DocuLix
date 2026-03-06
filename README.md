@@ -6,10 +6,16 @@ DocuLix is an AI-powered platform for uploading, analyzing, and simplifying lega
 
 <div align="center">
   <img src="web_app/public/assets/img/Screenshot 2025-09-18 224620.png" alt="Dashboard Screenshot 1" width="45%" style="margin:10px;" />
-  <img src="web_app/public/assets/img/Screenshot 2025-09-18 224636.png" alt="Dashboard Screenshot 2" width="45%" style="margin:10px;" />
+  <img src="web_app/public/assets/img/Screenshot 2026-03-06 222031.png" alt="Dashboard Screenshot 2" width="45%" style="margin:10px;" />
   <br/>
-  <img src="web_app/public/assets/img/Screenshot 2025-09-18 224756.png" alt="Dashboard Screenshot 3" width="45%" style="margin:10px;" />
-  <img src="web_app/public/assets/img/Screenshot 2025-09-18 224812.png" alt="Dashboard Screenshot 4" width="45%" style="margin:10px;" />
+  <img src="web_app/public/assets/img/Screenshot 2026-03-06 221626.png" alt="Dashboard Screenshot 3" width="45%" style="margin:10px;" />
+  <img src="web_app/public/assets/img/Screenshot 2026-03-06 203115.png" alt="Dashboard Screenshot 4" width="45%" style="margin:10px;" />
+  <br/>
+  <img src="web_app/public/assets/img/Screenshot 2026-03-06 203219.png" alt="Dashboard Screenshot 5" width="45%" style="margin:10px;" />
+  <img src="web_app/public/assets/img/Screenshot 2026-03-06 203251.png" alt="Dashboard Screenshot 6" width="45%" style="margin:10px;" />	
+  <br/>
+  <img src="web_app/public/assets/img/Screenshot 2026-03-06 220526.png" alt="Sign Out Page" width="45%" style="margin:10px;" />
+  <img src="web_app/public/assets/img/Screenshot 2026-03-06 203443.png" alt="Generated PDF image" width="45%" style="margin:10px;" />
 </div>
 
 ---

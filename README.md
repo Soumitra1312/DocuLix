@@ -29,6 +29,19 @@ DocuLix is an AI-powered platform for uploading, analyzing, and simplifying lega
 
 ---
 
+## ✨ Key Features
+- 📄 Multi-format uploads (PDF, Word, Images)
+- 🤖 AI-powered legal Q&A using NLP models
+- 🧠 Clause paraphrasing with T5-based models
+- ⚖️ Risk & sentiment analysis of contract clauses
+- 🔐 Secure OTP-based authentication
+- ⏳ Configurable session timer with automatic logout (10-minute default) for secure access control
+- 📜 Session history tracking to review previous queries and responses
+- 📥 One-click download of complete session reports as PDF
+- 🛡️ Your document is 100% secure — no user data or uploaded documents are stored
+- ⚡ Modern dashboard with Next.js & React
+- 🐳 Dockerized deployment using Docker Compose
+
 ## Components
 
 ### 1. Web App (Next.js/React)

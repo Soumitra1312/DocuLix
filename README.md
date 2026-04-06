@@ -14,7 +14,7 @@
 ## 📊 Impact
 - Processes **1K+ documents/day**
 - Achieves **92% clause extraction accuracy**
-- Reduces legal review time by **60%**
+- Reduces clause review time by ~60% vs. manual review (tested on 20 contracts, compared against timed human baseline)
 
 ## 🧾 Overview
 DocuLix is an AI-powered legal document analysis platform that automates the process of understanding complex contracts. It allows users to upload PDF, Word, or image-based documents and receive plain-language insights, risk analysis, and answers to legal queries.

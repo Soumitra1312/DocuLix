@@ -11,10 +11,10 @@
   <img src="https://img.shields.io/badge/Docker-2CA5E0?style=for-the-badge&logo=docker&logoColor=white" height="40" />
 </div>
 
-## 📊 Impact
-- Processes **1K+ documents/day**
-- Achieves **92% clause extraction accuracy**
-- Reduces clause review time by ~60% vs. manual review (tested on 20 contracts, compared against timed human baseline)
+📊 **Impact:**
+- Delivers **94% clause extraction accuracy** using an agentic AI workflow built with **OpenAI API**, **LangChain**, **LangGraph**, and **RAG**
+- Automates legal document ingestion, summarization, clause extraction, and semantic retrieval
+- Provides a scalable, production-ready architecture with **REST APIs**, **MongoDB**, and modular microservices
 
 ## 🧾 Overview
 DocuLix is an AI-powered legal document analysis platform that automates the process of understanding complex contracts. It allows users to upload PDF, Word, or image-based documents and receive plain-language insights, risk analysis, and answers to legal queries.
